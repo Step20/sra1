@@ -1,0 +1,57 @@
+@media only screen and (min-width: 700px) {
+  .home-outside {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .home-outside {
+    width: 100vw;
+    height: calc(41rem + 20vw);
+    display: table;
+    padding: 2vw;
+    .home-bg {
+      display: table-cell;
+      background-image: url("../assets/home.jpg");
+      overflow-x: hidden;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2vw;
+
+      .home {
+        .bottom {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          margin-bottom: 1%;
+          .text-top {
+            .btn {
+              display: inline;
+            }
+            p {
+              display: inline;
+            }
+          }
+          .text-mid {
+            background-color: white;
+            border-top-right-radius: 3vw;
+            width: 52%;
+
+            h1 {
+              font-size: calc(2rem + 3vw);
+            }
+          }
+          .text-low {
+            background-color: white;
+            border-top-right-radius: 3vw;
+            width: 90%;
+            h1 {
+              font-size: calc(2rem + 3vw);
+            }
+          }
+        }
+      }
+    }
+  }
+}
