@@ -1,0 +1,47 @@
+.nav2 {
+  .nav3 {
+    .brand {
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+    }
+    .text {
+      font-size: calc(1rem + 0.6vw);
+      color: #00000057;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transition: all 0.2s;
+        cursor: pointer;
+        color: black !important;
+        font-weight: 600;
+        transform: translate(0, -5px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav2 {
+    display: none !important;
+
+    .nav3 {
+      display: none !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav2 {
+    position: fixed;
+    display: contents;
+    align-items: center;
+
+    .nav3 {
+      display: contents;
+
+      background-color: white;
+    }
+  }
+}

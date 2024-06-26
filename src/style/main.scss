@@ -1,19 +1,43 @@
-@import "home";
-@import "about";
-@import "box";
-@import "footer";
-@import "aboutpage";
-@import "curpage";
-@import "suppage";
-@import "conpage";
-@import "respage";
-@import "cursor";
+@import "./homepage/sup";
+@import "./homepage/box";
+@import "./homepage/cur";
+@import "./homepage/about";
+@import "./homepage/home";
+@import "./aboutpage/topabout";
+@import "./aboutpage/about-ex";
+@import "./aboutpage/about-our";
+@import "./curpage/topcur";
+@import "./curpage/cur-list";
+@import "./resourcepage/resource";
+@import "./contactpage/contact";
 @import "nav";
-@import "nav2";
+@import "nav-sm";
+@import "footer";
 
 * {
-  scroll-behavior: smooth;
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* White background */
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    z-index: 9999; /* Ensure loader is on top of everything */
+  }
 
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  scroll-behavior: smooth;
   ::-webkit-scrollbar {
     width: 10px;
   }

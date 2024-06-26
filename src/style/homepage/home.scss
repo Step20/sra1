@@ -1,0 +1,262 @@
+.home-container {
+  padding: 0.9vw;
+  height: 100vh;
+  .home-bg-img {
+    background-image: url("../../assets/home.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.8vw;
+    width: 100%;
+    height: 100%;
+    .top-section {
+      .top-logo {
+        padding: 1.2svw 2.3vw;
+        img {
+          width: 7.8vw;
+        }
+      }
+    }
+    .bottom-section {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      .bottom-text {
+        display: table;
+        h1 {
+          width: 100%;
+          font-size: 5.7vw;
+          display: table;
+          margin: 0px auto 0px auto;
+        }
+        p {
+          font-size: 1vw;
+          display: table;
+          margin: 0px 0px auto;
+          font-weight: 600;
+          color: #808080;
+          .p-span {
+            padding-top: 1vw;
+            padding-bottom: 4vw;
+            button {
+              color: black;
+              font-weight: 500;
+              padding: 0.1vw 0.6vw;
+              margin-bottom: 0.6vw;
+              margin-right: 1vw;
+              border: 1px solid black;
+              text-align: center;
+              transition: all 0.3s ease;
+              border-radius: 0.8vw;
+              &:hover {
+                color: white;
+                background-color: black;
+                transition: all 0.3s ease;
+                border: 1px solid black;
+              }
+            }
+          }
+        }
+        span {
+          padding-right: 2vw;
+          border-top-right-radius: 2vw;
+          background-color: white;
+        }
+      }
+      .view-btn {
+        display: table;
+        margin: auto auto 18% 3vw;
+        button {
+          background-color: white;
+          padding: 0.3vw 1vw;
+          border-radius: 1vw;
+          font-size: 1vw;
+          align-items: center;
+          display: inline-flex;
+          transition: all 0.3s ease;
+
+          .dot {
+            height: 0.32vw;
+            width: 0.32vw;
+            background-color: #000000;
+            border-radius: 100%;
+            margin-left: 2vw;
+          }
+          &:hover {
+            color: white;
+            background-color: black;
+            transition: all 0.3s ease;
+            transform: translate(0px, -2px);
+            .dot {
+              background-color: white;
+            }
+          }
+        }
+      }
+      .bottom-box {
+        display: table;
+        position: relative;
+        float: right;
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+        .home-block {
+          bottom: 0;
+          --animate-delay: 0.9s;
+          border-radius: 1.5vw;
+          background: rgba(255, 255, 255, 0.6);
+          backdrop-filter: blur(12px);
+          padding: 1.2vw;
+          cursor: pointer;
+          width: 45%;
+          float: right;
+          margin-right: 7%;
+          height: max-content;
+          h4 {
+            font-size: 1vw;
+            font-weight: 600;
+            margin-bottom: 0.9vw;
+          }
+          p {
+            font-size: 0.8vw;
+            line-height: 1.4vw;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-container {
+    padding: 0.9vw;
+    height: 90vh;
+    .home-bg-img {
+      background-image: url("../../assets/home.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 1.8vw;
+      width: 100%;
+      height: 100%;
+      .top-section {
+        .top-logo {
+          display: none;
+          padding: 1.2svw 2.3vw;
+          img {
+            width: 7.8vw;
+          }
+        }
+      }
+      .bottom-section {
+        display: relative;
+        grid-template-columns: auto auto auto;
+        .bottom-text {
+          display: table;
+          h1 {
+            width: 100%;
+            font-size: 11vw;
+            display: table;
+            margin: 0px auto 0px auto;
+          }
+          p {
+            font-size: 2.5vw;
+            display: table;
+            margin: 0px 0px auto;
+            font-weight: 600;
+            color: #808080;
+
+            .p-span {
+              padding-top: 2vw;
+              padding-bottom: 4vw;
+
+              button {
+                align-self: center;
+                vertical-align: middle;
+                color: black;
+                font-weight: 500;
+                padding: 0.1vw 1.5vw;
+                margin-bottom: 0.6vw;
+                margin-right: 1vw;
+                border: 1px solid black;
+                text-align: center;
+                transition: all 0.3s ease;
+                border-radius: 2vw;
+                &:hover {
+                  color: white;
+                  background-color: black;
+                  transition: all 0.3s ease;
+                  border: 1px solid black;
+                }
+              }
+            }
+          }
+          span {
+            padding-right: 2vw;
+            border-top-right-radius: 2vw;
+            background-color: white;
+          }
+        }
+        .view-btn {
+          display: none;
+          margin: auto auto 18% 3vw;
+          button {
+            background-color: white;
+            padding: 0.3vw 1vw;
+            border-radius: 1vw;
+            font-size: 1vw;
+            align-items: center;
+            display: inline-flex;
+            transition: all 0.3s ease;
+
+            .dot {
+              height: 0.32vw;
+              width: 0.32vw;
+              background-color: #000000;
+              border-radius: 100%;
+              margin-left: 2vw;
+            }
+            &:hover {
+              color: white;
+              background-color: black;
+              transition: all 0.3s ease;
+              transform: translate(0px, -2px);
+              .dot {
+                background-color: white;
+              }
+            }
+          }
+        }
+        .bottom-box {
+          display: none;
+          position: relative;
+          float: right;
+          .home-block {
+            bottom: 0;
+            --animate-delay: 0.9s;
+            border-radius: 1.5vw;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            padding: 1.2vw;
+            cursor: pointer;
+            width: 45%;
+            float: right;
+            margin-right: 7%;
+            height: max-content;
+            h4 {
+              font-size: 1vw;
+              font-weight: 600;
+              margin-bottom: 0.9vw;
+            }
+            p {
+              font-size: 0.8vw;
+              line-height: 1.4vw;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

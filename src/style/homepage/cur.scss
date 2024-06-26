@@ -1,0 +1,246 @@
+.cur-container {
+  height: 100%;
+  display: inline;
+  .cur-content {
+    margin: 0vw 8vw;
+    display: flex;
+    // transform: translateY(25%);
+    vertical-align: middle;
+    position: relative;
+    .right {
+      width: 50%;
+      .img {
+        background-image: url("../../assets/vr.jpg");
+        border-radius: 1.5vw;
+        width: 80%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        h3 {
+          font-weight: 600;
+          width: 100%;
+          font-size: 2.5vw;
+          margin: 0px 0px 0.4vw 0px;
+          span {
+            padding: 0.4vw 1.1vw;
+            display: inline;
+            border-bottom-right-radius: 2vw;
+            background-color: white;
+          }
+        }
+
+        .icon-bg {
+          margin: 1.2vw;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: white;
+          display: inline;
+          padding: 0.7vw;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          .icon {
+            font-size: 3vw;
+            rotate: -42deg;
+            color: black;
+          }
+          &:hover {
+            cursor: pointer;
+            transition: all 0.5s ease;
+            transform: translate(2px, -2px);
+          }
+        }
+      }
+    }
+    .left {
+      width: 50%;
+      vertical-align: middle;
+      h1 {
+        font-size: 3.6vw;
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.4vw;
+        width: 80%;
+        line-height: 3.2vw;
+        margin-bottom: 6%;
+      }
+      .btn-group {
+        .learn-btn {
+          background-color: black;
+          color: white;
+          padding: 0.7vw 2.1vw;
+          border-radius: 2vw;
+          font-size: 0.9vw;
+          border: 1px solid black;
+          transition: all 0.3s ease;
+          &:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            transition: all 0.3s ease;
+            transform: translate(0px, -3px);
+          }
+        }
+        .view-btn {
+          padding: 0.7vw 0.8vw;
+          border-radius: 2vw;
+          font-size: 0.9vw;
+          align-items: center;
+          display: inline-flex;
+          background-color: white;
+          border: 1px solid black;
+          color: black;
+          transition: all 0.3s ease;
+          .dot {
+            display: inline;
+            height: 0.32vw;
+            width: 0.32vw;
+            background-color: #000000;
+            border-radius: 100%;
+            margin-left: 3vw;
+          }
+          &:hover {
+            background-color: black;
+            color: white;
+            transition: all 0.3s ease;
+            transform: translate(0px, -3px);
+            .dot {
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cur-container {
+    height: 100%;
+    display: inline;
+    .cur-content {
+      margin: 0vw 8vw 5vw;
+      display: block;
+      // transform: translateY(25%);
+      vertical-align: middle;
+      position: relative;
+      .right {
+        width: 100%;
+        margin-top: 7.5vw;
+        .img {
+          float: none;
+          background-image: url("../../assets/vr.jpg");
+          border-radius: 3vw;
+          width: 85%;
+          margin: auto;
+          position: relative;
+
+          height: 45vh;
+          h3 {
+            font-weight: 600;
+            width: 100%;
+            font-size: 5.5vw;
+            margin: 0px 0px 0.4vw 0px;
+            span {
+              padding: 0.4vw 1.1vw;
+              display: inline;
+              border-bottom-right-radius: 2vw;
+              background-color: white;
+            }
+          }
+
+          .icon-bg {
+            margin: 2vw;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            display: inline;
+            padding: 0.7vw;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            .icon {
+              font-size: 7vw;
+              rotate: -42deg;
+              color: black;
+            }
+            &:hover {
+              cursor: pointer;
+              transition: all 0.5s ease;
+              transform: translate(2px, -2px);
+            }
+          }
+        }
+      }
+      .left {
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        h1 {
+          margin-top: 4vw;
+          font-size: 7vw;
+          font-weight: 700;
+        }
+        p {
+          font-size: 3vw;
+          width: 85%;
+          margin: auto;
+          line-height: 6vw;
+          margin-bottom: 6%;
+        }
+        .btn-group {
+          float: none;
+
+          .learn-btn {
+            background-color: black;
+            color: white;
+            padding: 0.7vw 2.1vw;
+
+            border-radius: 3vw;
+            font-size: 2.5vw;
+            border: 1px solid black;
+            transition: all 0.3s ease;
+            &:hover {
+              color: rgb(0, 0, 0);
+              background-color: rgb(255, 255, 255);
+              border: 1px solid black;
+              transition: all 0.3s ease;
+              transform: translate(0px, -3px);
+            }
+          }
+          .view-btn {
+            padding: 0.7vw 1vw;
+            border-radius: 3vw;
+            font-size: 2.5vw;
+            align-items: center;
+            display: inline-flex;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            transition: all 0.3s ease;
+            .dot {
+              display: inline;
+              height: 0.7vw;
+              width: 0.7vw;
+              background-color: #000000;
+              border-radius: 100%;
+              margin-left: 3vw;
+            }
+            &:hover {
+              background-color: black;
+              color: white;
+              transition: all 0.3s ease;
+              transform: translate(0px, -3px);
+              .dot {
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

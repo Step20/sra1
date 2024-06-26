@@ -1,19 +1,18 @@
 import React from "react";
-import { Container, Row, Col, Button, Input, InputGroup } from "reactstrap";
-import { Top } from "../components/CurPage/TopComponent";
-import { Exp } from "../components/CurPage/ExComponent";
-import { List } from "../components/CurPage/ListComponent";
-import { Mis } from "../components/CurPage/MisComponent";
-import { Footer } from "../components/FooterComponent";
+import CurTopComponent from "../components/Curriculum/CurTopComponent";
+import CurHowComponent from "../components/Curriculum/CurHowComponent";
+import CurOurComponent from "../components/Curriculum/CurOurComponent";
+import CurListComponent from "../components/Curriculum/CurListComponent";
+import NavSmComponent from "../components/Nav/NavSmComponent";
 
 export const CurPage = () => {
   return (
-    <div id="cur">
-      <Top />
-      <Exp />
-      <List />
-      <Mis />
-      <Footer />
-    </div>
+    <>
+      <NavSmComponent />
+      <CurTopComponent />
+      <CurHowComponent />
+      <CurListComponent />
+      <CurOurComponent />
+    </>
   );
 };

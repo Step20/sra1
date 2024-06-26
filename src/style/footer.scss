@@ -1,315 +1,312 @@
-.footer {
-  margin-top: 6%;
+.footer-container {
   background-color: black;
-  height: 35vh;
   width: 100%;
-  display: table;
-  .footer-content {
-    display: table-cell;
-    vertical-align: middle;
-    .hr {
-      width: 100vw;
-      height: 0.05vw;
-      background-color: white;
+  height: 100%;
+  display: inline-table;
+  color: white;
+  .top-content {
+    padding: 5vw 8vw;
+    display: grid;
+    grid-template-columns: auto auto auto 30%;
+    h4 {
+      font-size: 1.3vw;
+      margin-bottom: 1.1vw;
     }
-    .footer-row {
-      margin-left: 4.5%;
-      margin-bottom: 4.5%;
-      margin-top: 4.5%;
-      width: 90%;
-      .footer-text {
-        color: white;
-        display: inline-block;
-        h4 {
-          font-size: 1.5vw;
+    ul {
+      padding: 0;
+      li {
+        font-size: 0.8vw;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        cursor: pointer;
+        .icon {
+          margin-right: 0.75vw;
         }
-        ul {
-          display: inline;
-          list-style: none;
-          li {
-            margin-bottom: 1vw;
-            &:hover {
-              cursor: pointer;
-              text-decoration: underline;
-              opacity: 0.8;
-            }
-            .icon {
-              font-size: 1.3vw;
-              margin-right: 0.5vw;
-            }
+        input {
+          font-size: 0.8vw;
+          padding: 0.6vw 1vw;
+          border-radius: 0px;
+          background-color: black;
+          color: white;
+          //   border: 1px solid white;
+          margin-top: 0.2vw;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          border-top-left-radius: 1vw;
+          border-bottom-left-radius: 1vw;
+          outline: 1px solid #fff;
+          outline-offset: 0px;
+        }
+        button {
+          font-size: 0.8vw;
+          border-top-right-radius: 1vw;
+          border-bottom-right-radius: 1vw;
+          background-color: white;
+          margin-top: 0.2vw;
+          color: black;
+          outline: 1px solid #fff;
+
+          font-weight: 500;
+          padding: 0.6vw 1.5vw;
+        }
+      }
+    }
+  }
+  hr {
+    margin: 0;
+  }
+  .bottom-content {
+    padding: 1vw 8vw;
+
+    .icon-group {
+      .icon-bg {
+        // background-color: white;
+        // padding: 0.45vw;
+        // border-radius: 50%;
+        // transition: all 0.3s ease;
+        border-radius: 50%;
+        background-color: white;
+        padding: 0.3vw;
+        transition: all 0.3s ease;
+
+        .icon {
+          transition: all 0.3s ease;
+          font-size: 0.9vw;
+          color: black;
+        }
+        &:hover {
+          cursor: pointer;
+          outline: 1px solid #fff;
+          outline-offset: 0px;
+          background-color: black;
+          transition: all 0.3s ease;
+          transform: translate(0px, -3px);
+          .icon {
+            transition: all 0.3s ease;
+            color: #fff;
           }
-          .footer-input {
-            padding: 0.6vw 1vw 0.6vw 1vw;
+        }
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 0.8vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: inline-table;
+    color: white;
+    .top-content {
+      padding: 5vw 8vw;
+      // display: block;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      h4 {
+        font-size: 3vw;
+        margin-bottom: 1.1vw;
+      }
+      ul {
+        padding: 0;
+        margin-bottom: 5vw;
+        li {
+          justify-content: center;
+          font-size: 2vw;
+          display: flex;
+          align-items: center;
+          font-weight: 200;
+          cursor: pointer;
+          .icon {
+            margin-right: 0.75vw;
+          }
+          input {
+            font-size: 2vw;
+            padding: 1vw 1.5vw;
             border-radius: 0px;
             background-color: black;
             color: white;
+            //   border: 1px solid white;
             margin-top: 0.2vw;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-top-left-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            outline: 1px solid #fff;
+            outline-offset: -1px;
           }
-          .footer-btn {
+          button {
+            font-size: 2vw;
+            border-top-right-radius: 2vw;
+            border-bottom-right-radius: 2vw;
             background-color: white;
-            border-radius: 0px;
             margin-top: 0.2vw;
             color: black;
             border: white;
-            font-weight: bold;
-            padding: 0.6vw 1.5vw 0.6vw 1.5vw;
+            font-weight: 500;
+            padding: 1vw 1.5vw;
           }
         }
       }
     }
-    .foot-low {
-      margin-left: 4.5%;
-      margin-bottom: 0.5%;
-      margin-top: 1.5%;
-      width: 90%;
+    hr {
+      margin: 0;
+    }
+    .bottom-content {
+      padding: 1vw 8vw;
+
       .icon-group {
-        margin-left: -2.2%;
-        ul {
-          li {
-            list-style: none;
-            display: inline;
-            border-radius: 50%;
-            background-color: white;
-            padding: 0.5vw;
+        .icon-bg {
+          // background-color: white;
+          // padding: 0.45vw;
+          // border-radius: 50%;
+          // transition: all 0.3s ease;
+          border-radius: 50%;
+          background-color: white;
+          padding: 0.6vw;
+          transition: all 0.3s ease;
 
-            margin-right: 1.3vw;
+          .icon {
             transition: all 0.3s ease;
+            font-size: 3vw;
+            color: black;
+          }
+          &:hover {
+            cursor: pointer;
+            outline: 1px solid #fff;
+            outline-offset: 0px;
+            background-color: black;
+            transition: all 0.3s ease;
+            transform: translate(0px, -3px);
             .icon {
-              color: #000;
-              font-size: 1vw;
-              margin-bottom: 0.1vw;
-            }
-            &:hover {
-              cursor: pointer;
-              background-color: rgb(223, 223, 223);
               transition: all 0.3s ease;
-              transform: translate(0px, -9px);
+              color: #fff;
             }
           }
         }
       }
-      .copy {
-        p {
-          color: white;
-        }
+      p {
+        font-weight: 300;
+        font-size: 1.2vw;
       }
     }
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .footer {
-    margin-top: 6%;
+@media only screen and (max-width: 500px) {
+  .footer-container {
     background-color: black;
-    height: 35vh;
     width: 100%;
-    display: table;
-    .footer-content {
-      display: table-cell;
-      vertical-align: middle;
-      .hr {
-        width: 100vw;
-        height: 0.05vw;
-        background-color: white;
+    height: 100%;
+    display: inline-table;
+    color: white;
+    .top-content {
+      padding: 5vw 8vw;
+      display: block;
+      text-align: center;
+      // display: grid;
+      // grid-template-columns: 50% 50%;
+      // grid-template-rows: 50% 50%;
+      h4 {
+        font-size: 3vw;
+        margin-bottom: 1.1vw;
       }
-      .footer-row {
-        margin-left: 4.5%;
-        margin-bottom: 4.5%;
-        margin-top: 4.5%;
-        width: 90%;
-        .footer-text {
-          color: white;
-          display: inline-block;
-          h4 {
+      ul {
+        padding: 0;
+        margin-bottom: 5vw;
+        li {
+          justify-content: center;
+          font-size: 2vw;
+          display: flex;
+          align-items: center;
+          font-weight: 200;
+          cursor: pointer;
+          .icon {
+            margin-right: 0.75vw;
+          }
+          input {
             font-size: 2vw;
-          }
-          ul {
-            display: inline;
-            list-style: none;
-            li {
-              margin-bottom: 1vw;
-              font-size: 1.5vw;
-              &:hover {
-                cursor: pointer;
-                text-decoration: underline;
-                opacity: 0.8;
-              }
-              .icon {
-                font-size: 1.5vw;
-                margin-right: 0.5vw;
-              }
-            }
-            .footer-input {
-              padding: 0.6vw 1vw 0.6vw 1vw;
-              border-radius: 0px;
-              background-color: black;
-              color: white;
-              margin-top: 0.2vw;
-              font-size: 1.5vw;
-            }
-            .footer-btn {
-              background-color: white;
-              border-radius: 0px;
-              margin-top: 0.2vw;
-              color: black;
-              border: white;
-              font-weight: bold;
-              font-size: 1.5vw;
-              padding: 0.6vw 1.5vw 0.6vw 1.5vw;
-            }
-          }
-        }
-      }
-      .foot-low {
-        margin-left: 4.5%;
-        margin-bottom: 0.5%;
-        margin-top: 1.5%;
-        width: 90%;
-        .icon-group {
-          margin-left: -2.2%;
-          ul {
-            li {
-              list-style: none;
-              display: inline;
-              border-radius: 50%;
-              background-color: white;
-              padding: 0.5vw;
-
-              margin-right: 1.3vw;
-              transition: all 0.3s ease;
-              .icon {
-                color: #000;
-                font-size: 1vw;
-                margin-bottom: 0.1vw;
-              }
-              &:hover {
-                cursor: pointer;
-                background-color: rgb(223, 223, 223);
-                transition: all 0.3s ease;
-                transform: translate(0px, -9px);
-              }
-            }
-          }
-        }
-        .copy {
-          p {
+            padding: 1vw 1.5vw;
+            border-radius: 0px;
+            background-color: black;
             color: white;
+            //   border: 1px solid white;
+            margin-top: 0.2vw;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-top-left-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            outline: 1px solid #fff;
+            outline-offset: -1px;
+          }
+          button {
+            font-size: 2vw;
+            border-top-right-radius: 2vw;
+            border-bottom-right-radius: 2vw;
+            background-color: white;
+            margin-top: 0.2vw;
+            color: black;
+            border: white;
+            font-weight: 500;
+            padding: 1vw 1.5vw;
           }
         }
       }
     }
-  }
-}
+    hr {
+      margin: 0;
+    }
+    .bottom-content {
+      padding: 2vw 8vw;
+      text-align: center;
+      width: 100%;
+      display: block;
+      .icon-group {
+        justify-content: center;
+        margin-bottom: 3vw;
+        margin-top: 1vw;
+        .icon-bg {
+          // background-color: white;
+          // padding: 0.45vw;
+          // border-radius: 50%;
+          // transition: all 0.3s ease;
+          border-radius: 50%;
+          background-color: white;
+          padding: 0.6vw;
+          transition: all 0.3s ease;
 
-@media only screen and (max-width: 574px) {
-  .footer {
-    margin-top: 7%;
-    background-color: black;
-    height: 35vh;
-    width: 100%;
-    display: table;
-    .footer-content {
-      display: table-cell;
-      vertical-align: middle;
-      .hr {
-        width: 100vw;
-        height: 0.08vw;
-        background-color: white;
-      }
-      .footer-row {
-        margin-left: 4.5%;
-        margin-bottom: 4.5%;
-        margin-top: 4.5%;
-        width: 100%;
-        .footer-text {
-          color: white;
-          display: inline-block;
-          margin-bottom: 5vw;
-          h4 {
-            font-weight: bold;
-            font-size: calc(0.6rem + 0.2vw);
-            margin-bottom: -4.5vw;
-            margin-top: 1vw;
+          .icon {
+            transition: all 0.3s ease;
+            font-size: 3.2vw;
+            color: black;
           }
-          ul {
-            margin-bottom: 5vw;
-            display: inline;
-            list-style: none;
-            li {
-              margin-bottom: 0.5vw;
-              font-size: calc(0.4rem + 0.2vw);
-              text-decoration: none;
-              &:hover {
-                cursor: pointer;
-                text-decoration: underline;
-                opacity: 0.8;
-              }
-              .icon {
-                font-size: calc(0.4rem + 0.2vw);
-                margin-right: 0.5vw;
-              }
-            }
-            .footer-input {
-              width: 20vw;
-              padding: 0.6vw 1vw 0.6vw 1vw;
-              border-radius: 0px;
-              background-color: black;
-              color: white;
-              margin-top: 0.2vw;
-              font-size: 1.5vw;
-            }
-            .footer-btn {
-              background-color: white;
-              border-radius: 0px;
-              margin-top: 0.2vw;
-              color: black;
-              border: white;
-              font-weight: bold;
-              font-size: 1.5vw;
-              padding: 0.6vw 1.5vw 0.6vw 1.5vw;
-            }
-          }
-        }
-      }
-      .foot-low {
-        margin-left: 4.5%;
-        margin-bottom: -6%;
-        margin-top: 5%;
-        width: 90%;
-        .icon-group {
-          margin-left: -2.2%;
-          ul {
-            li {
-              list-style: none;
-              display: inline;
-              border-radius: 50%;
-              background-color: white;
-              padding: 0.5vw;
-
-              margin-right: 1.3vw;
+          &:hover {
+            cursor: pointer;
+            outline: 1px solid #fff;
+            outline-offset: 0px;
+            background-color: black;
+            transition: all 0.3s ease;
+            transform: translate(0px, -3px);
+            .icon {
               transition: all 0.3s ease;
-              .icon {
-                color: #000;
-                font-size: 1vw;
-                margin-bottom: 0.1vw;
-              }
-              &:hover {
-                cursor: pointer;
-                background-color: rgb(223, 223, 223);
-                transition: all 0.3s ease;
-                transform: translate(0px, -9px);
-              }
+              color: #fff;
             }
           }
         }
-        .copy {
-          p {
-            align-self: center;
-            margin-top: 1.5%;
-            font-size: calc(0.4rem + 0.2vw);
-            color: white;
-          }
-        }
+      }
+      p {
+        font-weight: 300;
+        font-size: 1.2vw;
       }
     }
   }

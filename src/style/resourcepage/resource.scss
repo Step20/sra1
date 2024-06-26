@@ -1,0 +1,135 @@
+.res-container {
+  height: 100%;
+  margin: 10vw 8vw;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    transition: all 0.3s ease;
+    background: #bad3fc;
+    cursor: pointer;
+  }
+  .res-content {
+    h1 {
+      text-align: center;
+      margin-bottom: 2%;
+      font-size: 3.6vw;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+  .accord-out {
+    vertical-align: middle;
+    overflow-y: scroll;
+    height: 45rem;
+    .accord-container {
+      .accord {
+        height: 100%;
+        overflow-y: scroll;
+        .box {
+          width: 100%;
+
+          border: 2px solid black;
+          .title {
+            font-size: 1vw;
+            font-weight: 600;
+          }
+
+          .body {
+            padding: 1vw;
+            .img {
+              display: inline;
+              width: 100%;
+              border-radius: 2vw;
+            }
+            .desc {
+              font-size: 3vw;
+              font-weight: 300;
+              line-height: 2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .res-container {
+    height: 100%;
+    margin: 10vw 8vw;
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #000000;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      transition: all 0.3s ease;
+      background: #bad3fc;
+      cursor: pointer;
+    }
+    .res-content {
+      h1 {
+        text-align: center;
+        margin-bottom: 4%;
+        font-size: 7vw;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+    .accord-out {
+      vertical-align: middle;
+      overflow-y: scroll;
+      height: 45rem;
+      .accord-container {
+        .accord {
+          height: 100%;
+          overflow-y: scroll;
+          .box {
+            width: 100%;
+
+            border: 2px solid black;
+            .title {
+              font-size: 1vw;
+              font-weight: 600;
+            }
+
+            .body {
+              padding: 1vw;
+              .img {
+                display: inline;
+                width: 100%;
+                border-radius: 2vw;
+              }
+              .desc {
+                font-size: 3vw;
+                font-weight: 300;
+                line-height: 2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
