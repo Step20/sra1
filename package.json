@@ -1,60 +1,31 @@
 {
-  "name": "sra",
-  "version": "0.1.0",
+  "name": "sun-rze-academy",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^4.3.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.2.3",
-    "node-sass": "^7.0.3",
-    "react": "^18.2.0",
-    "react-animations": "^1.0.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.12.0",
-    "react-preloaders": "^3.0.3",
-    "react-reveal": "^1.2.2",
-    "react-router-dom": "^6.11.0",
-    "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
-    "react-scroll": "^1.8.9",
-    "react-scroll-to-top": "^3.0.0",
-    "react-vanilla-tilt": "^1.0.0",
-    "reactstrap": "^9.1.9",
-    "sass": "^1.63.6",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "firebase": "^11.10.0",
+    "framer-motion": "^11.18.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
-    "ajv": "^7.2.4",
-    "autoprefixer": "^10.4.19",
-    "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.4"
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
   }
 }
